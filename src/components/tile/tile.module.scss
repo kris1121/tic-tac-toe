@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: #eee;
+    color: red;
+    padding: 0;
+  }
+
+  .container_checked {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: #eee;
+    color: red;
+    padding: 0;
+  }
+
+  .container_red {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    padding: 0;
+  }
+
+.sign {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.blank {
+  stroke-dasharray: 0;
+}
+
+.svg_x path:nth-of-type(3) {
+  stroke-dasharray: 400;
+  animation: 5s fillSvgX2 linear;
+}
+
+.svg_x path:nth-of-type(2) {
+  stroke-dasharray: 400;
+  animation: 2s fillSvgX1 linear;
+}
+
+.svg_o {
+  stroke-dasharray: 209;
+  animation: 2s fillSvgO linear;
+}
+
+@keyframes fillSvgX1 {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillSvgX2 {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillSvgO {
+  0% {
+    stroke-dashoffset: 209;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
